@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return 'Hitchcock: {}'.format(os.uname()[1])
+    return 'Hello: {}'.format(os.uname()[1])
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
